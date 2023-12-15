@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+.test {
+    /* background-color: red; */
+    padding-top: 10rem;
+    color: "#a1a1aa";
+}
+.uhh {
+    max-width: 50ch;
+}
+.row-letter {
+    font-size: clamp(8rem, calc(6rem + 8vw), 14rem);
+    font-weight: 500;
+    position: relative;
+    letter-spacing: -0.9rem;
+    line-height: 110%;
+    display: inline-block;
+    font-family: "Poppins", "Inter";
+}
+.banner-row {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    /* gap: 2rem; */
+    .row-col {
+        /* width: 50%; */
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        @media (max-width: var(--br-md)) {
+            width: 70%;
+        }
+        /* @media (max-width: 1240px) {
+            &:last-child {
+                display: none;
+            }
+        } */
+        @media (max-width: var(--br-xsm)) {
+            width: 100%;
+            justify-content: flex-start;
+        }
+    }
+}
+@media (width < 980px) {
+    .test {
+        padding-top: 16rem;
+    }
+}
+@media (width < 720px) {
+    .banner-row:first-child {
+        margin-top: 48px;
+    }
+    .test {
+        padding-top: 18rem;
+    }
+    .uhh {
+        display: none;
+    }
+}
+
+.banner-row.center {
+    justify-content: center;
+    text-align: center;
+    .row-letter {
+        left: 0;
+    }
+}
