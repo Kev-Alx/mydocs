@@ -64,9 +64,9 @@ export default function Welcome({ auth }: PageProps<{}>) {
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="jumbo absolute -inset-[10px] opacity-50"></div>
                 </div>
-                <Banner />
+                {/* <Banner /> */}
             </div>
-            <Gallery />
+            {/* <Gallery /> */}
             <div className="bg-zinc-950">
                 <div className="mx-auto max-w-7xl px-4 py-12 text-white">
                     <Features />

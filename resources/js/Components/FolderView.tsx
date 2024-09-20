@@ -121,22 +121,6 @@ const TreeNode = ({ node, level }: { node: ReformattedDoc; level: number }) => {
                                     <li
                                         role="button"
                                         className="hover:bg-slate-200 p-1 rounded flex items-center"
-                                        onClick={(e) => {
-                                            e.stopPropagation();
-                                            deleteDocument({
-                                                id: node.id,
-                                                is_folder: node.isFolder
-                                                    ? 1
-                                                    : 0,
-                                            });
-                                        }}
-                                    >
-                                        <Trash className="h-4 w-4 opacity-0 group-hover/item:opacity-100 mr-2" />
-                                        Delete
-                                    </li>
-                                    <li
-                                        role="button"
-                                        className="hover:bg-slate-200 p-1 rounded flex items-center"
                                         onClick={() => {
                                             // console.log(node.id);
                                             handleRecOpen(true, node.id);

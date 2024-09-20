@@ -9,6 +9,7 @@ import {
     useMotionValueEvent,
 } from "framer-motion";
 import { buttonVariants } from "../ui/button";
+import { NewDocIcon } from "../Svgs";
 
 type Props = { user?: User };
 

@@ -77,7 +77,7 @@ export default function Login({
                     <InputError message={errors.password} className="mt-2" />
                 </div>
 
-                <div className="block mt-4">
+                {/* <div className="block mt-4">
                     <label className="flex items-center">
                         <Checkbox
                             name="remember"
@@ -90,7 +90,7 @@ export default function Login({
                             Remember me
                         </span>
                     </label>
-                </div>
+                </div> */}
 
                 <div className="flex items-center justify-end mt-4">
                     <Link

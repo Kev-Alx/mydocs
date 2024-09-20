@@ -23,7 +23,7 @@ const Preview = ({ document, auth }: PageProps) => {
         <>
             <Head title={document.title} />
             <HomeBar user={auth.user} />
-            <div className="pt-20 px-8 bg-zinc-950 h-screen">
+            <div className="pt-20 pb-6 px-8 bg-zinc-950 min-h-screen">
                 <div className="md:max-w-3xl lg:max-w-7xl mx-auto bg-white p-2 rounded-md rounded-b-none">
                     <h1 className="font-bold text-5xl text-zinc-950">
                         {document.title}

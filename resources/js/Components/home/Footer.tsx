@@ -15,7 +15,7 @@ const Footer = (props: Props) => {
         >
             {show ? (
                 <Spline
-                    className="mt-32 inset-0 absolute"
+                    className="mt-4 inset-0 absolute"
                     scene="https://prod.spline.design/eCGisRamRISv5kDO/scene.splinecode"
                 />
             ) : null}

@@ -4,6 +4,7 @@ import { Separator } from "@/Components/ui/separator";
 import { MDoc } from "@/lib/store";
 import { User } from "@/types";
 import { Head } from "@inertiajs/react";
+
 type PageProps = {
     auth: {
         user: User;

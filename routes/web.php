@@ -38,7 +38,6 @@ Route::get('/dashboard', function () {
 Route::get('/settings', function () {
     return Inertia::render('Settings', [
         'user' => auth()->user(),
-
     ]);
 })->middleware(['auth', 'verified'])->name('settings');
 
